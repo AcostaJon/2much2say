@@ -9,7 +9,6 @@ import Button from 'react-bootstrap/Button';
 // image components
 import PhoneandCoffee from '@/components/images/phoneCoffee';
 import Logo from '@/components/images/logo';
-import LeslieAvatar from '@/components/images/leslie';
 import LisiAvatar from '@/components/images/lisi';
 
 // my components
@@ -63,7 +62,6 @@ function About(props) {
           </Row>
           <Row xs={1} md={2} className='text-center'>
             <Col>
-              <LeslieAvatar />
               <h3>Host</h3>
               <h1>
                 Leslie Acosta
