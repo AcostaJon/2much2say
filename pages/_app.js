@@ -9,13 +9,16 @@ import Header from '@/components/header'
 import Footer from '@/components/footer';
 import getShowApi from './api/getShowApi';
 
+
 export default function App({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page) // per page layout
-  const [episodes, setEpisodes] = useState([]);
-  const [latestEpisodes, setLatestEpisodes] = useState([]);
+  const [show, setShow] = useState();
+  const [episodes, setEpisodes] = useState([]); //all episodes array
+  const [latestEpisodes, setLatestEpisodes] = useState([]); //latest episodes array
   const [firstEpName, setFirstEpName] = useState("");
   const [firstEpSpotifyLink, setFirstEpSpotifyLink] = useState("");
   const [firstEpSrc, setFirstEpSrc] = useState("");
+
 
   useEffect(() => {
     // bootstrap js library
@@ -23,9 +26,11 @@ export default function App({ Component, pageProps }) {
 
     // invoke getShowApi - returns successful promise
     const apiPromise = getShowApi()
-
+  
     // update state with data from data object
     apiPromise.then((data) => {
+      //entire podcast show
+      setShow(data);
       //all episodes
       setEpisodes(data.data.episodes.items);
       // latest episodes
@@ -39,22 +44,17 @@ export default function App({ Component, pageProps }) {
     }
     ).catch((err) => console.log(err))
 
-
+    
   }, [])
 
   return getLayout(
     <>
 
       <Head>
+        <title>2much2say - Podcast | Family | Lifestyle | Relations and more</title>
         <meta name="description" content="Podcast:Family|Lifestyle|Relations and more" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* site tile */}
-        <title>2much2say - Podcast | Family | Lifestyle | Relations and more</title>
-        {/* site icon */}
-        <link
-          rel="icon"
-          href="./logo.svg"
-        />
+        <link rel="icon" href="/podcastLogo2BadgeWhite.svg" />
       </Head>
 
       {/* Navbar and footer component is now displayed on all pages.*/}
