@@ -1,8 +1,6 @@
 //**************** Homepage **********************
 // react/next components
 import Link from 'next/link';
-import { Inter } from 'next/font/google'
-import Script from 'next/script';
 // bootstrap components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -13,10 +11,7 @@ import MediaPlayer from '@/components/mediaplayer/mediaPlayer';
 import Subscribe from '@/components/subscribe'
 import LatestEpisodes from '@/components/episode/latestEpisodes';
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default function Home(props) {
-
 
   return (
     <>
