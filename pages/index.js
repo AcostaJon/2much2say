@@ -77,7 +77,7 @@ export default function Home(props) {
             <Row >
               <Col>
                 {/* pwr comments plugin */}
-                <div className="powr-comments" id="a0224ee1_1695234505"></div><Script src="https://www.powr.io/powr.js?platform=html" />
+            
               </Col>
             </Row>
           </Container>

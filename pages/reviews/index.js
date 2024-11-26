@@ -23,7 +23,7 @@ function Reviews() {
 
         {/* power commenting system */}
         <Container>
-          <div className="powr-comments" id="a0224ee1_1695234505"></div><Script src="https://www.powr.io/powr.js?platform=html" />
+
         </Container>
       </main>
     </>
