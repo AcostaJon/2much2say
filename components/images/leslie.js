@@ -1,7 +1,7 @@
 // react component
 import Image from 'next/image';
 // image source
-import Leslie from '@/public/leslie.jpg';
+import Leslie from '';
 
 const LeslieAvatar = () => (
   <Image className="rounded-circle my-2"
