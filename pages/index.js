@@ -77,7 +77,7 @@ export default function Home(props) {
             <Row >
               <Col>
                 {/* pwr comments plugin */}
-                <div class="powr-comments" id="a0224ee1_1695234505"></div><Script src="https://www.powr.io/powr.js?platform=html" />
+                <div className="powr-comments" id="a0224ee1_1695234505"></div><Script src="https://www.powr.io/powr.js?platform=html" />
               </Col>
             </Row>
           </Container>
@@ -88,7 +88,7 @@ export default function Home(props) {
           <Row className="d-flex flex-column-reverse flex-md-row p-2 " xs={1} md={2} >
             <Col className='pt-3' md={7} lg={8}>
               <h1>Wine Down Wednesday's.</h1>
-              <p className='w-75 my-3'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'> <i className="fa-brands fa-instagram"></i> INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</p>
+              <p className='w-75 my-3'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</p>
               <Row className='m-0 my-lg-4' xs={1} md={2}>
                 <Col>
                   <ul className='true-crime-list'>
