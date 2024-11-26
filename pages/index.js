@@ -15,7 +15,7 @@ export default function Home(props) {
 
   return (
     <>
-      <main className={`${inter.className}`} id='top'>
+      <main id='top'>
         {/*Introduction Section - real talk, over some chilled */}
         <Container id='attentionGrabber'>
           <Row >
