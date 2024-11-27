@@ -1,19 +1,19 @@
 'use client'
-import { useEffect } from "react";
-import Link from 'next/link';
+// import { useEffect } from "react";
+// import Link from 'next/link';
 // css
-import styles from "./page.module.css";
+// import styles from "./page.module.css";
 // bootstrap components
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
+// import Button from 'react-bootstrap/Button';
 //my components
-import MediaPlayer from '@/app/components/mediaplayer/mediaPlayer';
-import Subscribe from '@/app/components/subscribe'
-import LatestEpisodes from '@/app/components/episode/latestEpisodes';
-import Header from "./components/header";
-import Footer from "./components/footer";
+// import MediaPlayer from '@/app/components/mediaplayer/mediaPlayer';
+// import Subscribe from '@/app/components/subscribe'
+// import LatestEpisodes from '@/app/components/episode/latestEpisodes';
+// import Header from "./components/header";
+// import Footer from "./components/footer";
 
 export default function Home(props) {
   useEffect(() => {
@@ -28,10 +28,11 @@ export default function Home(props) {
 
   return (
     <>
-    <Header />
+    <h1>hello</h1>
+     {/* <Header /> */}
       <main id='top'>
         {/*Introduction Section - real talk, over some chilled */}
-        <Container id='attentionGrabber'>
+        {/* <Container id='attentionGrabber'>
           <Row >
             <Col className='d-flex flex-column justify-content-end align-items-center'>
               <h3>A PODCAST ABOUT SELF</h3>
@@ -46,22 +47,22 @@ export default function Home(props) {
               </div>
             </Col >
           </Row>
-        </Container>
+        </Container> */}
 
         {/* media player */}
-        <p className='container my-3 text-center '><span className='text-info'>LATEST EPISODE:</span> </p>
+        {/* <p className='container my-3 text-center '><span className='text-info'>LATEST EPISODE:</span> </p> */}
         {/* <MediaPlayer spotify={props.firstEpSpotifyLink} src={props.firstEpSrc} /> */}
 
         {/* Latest Episodes Section */}
         {/* <LatestEpisodes episodes={props.latestEp} /> */}
 
         {/*About Us Section */}
-        <Container fluid className='my-5 py-5' >
+        {/* <Container fluid className='my-5 py-5' >
           <Container>
             <Row xs={1} md={2}>
-              <Col md={5} lg={4} className='border border-info border-2 rounded-start-circle align-self-stretch' id='aboutUsSection' >
+              <Col md={5} lg={4} className='border border-info border-2 rounded-start-circle align-self-stretch' id='aboutUsSection' > */}
                 {/* background image set */}
-              </Col>
+              {/* </Col>
               <Col md={7} lg={8} >
                 <h3>Leslie & Lisi</h3>
                 <h1 className='mt-5 mb-4'>We have Created This Podcast Based on Positivity, and Success for others.</h1>
@@ -72,10 +73,10 @@ export default function Home(props) {
               </Col>
             </Row>
           </Container>
-        </Container>
+        </Container> */}
 
         {/* Reviews Section - We Love Your Reviews */}
-        <Container fluid className='py-5 my-5 bg-secondary  bg-opacity-10'>
+        {/* <Container fluid className='py-5 my-5 bg-secondary  bg-opacity-10'>
           <Container className='pb-5'>
             <Row>
               <Col className='text-center my-5'>
@@ -84,16 +85,16 @@ export default function Home(props) {
               </Col>
             </Row>
             <Row >
-              <Col>
+              <Col> */}
                 {/* pwr comments plugin */}
 
-              </Col>
+              {/* </Col>
             </Row>
           </Container>
-        </Container>
+        </Container> */}
 
         {/* Winedown Wednesday - Section*/}
-        <Container className='py-5' >
+        {/* <Container className='py-5' >
           <Row className="d-flex flex-column-reverse flex-md-row p-2 " xs={1} md={2} >
             <Col className='pt-3' md={7} lg={8}>
               <h1>Wine Down Wednesday's.</h1>
@@ -116,14 +117,14 @@ export default function Home(props) {
                 <Button variant="info" size='lg'>More About Us</Button>
               </Link>
             </Col>
-            <Col md={5} lg={4} className='border border-info border-2 rounded-end-circle align-self-stretch ' id='wineDownWednesdayImg'>
+            <Col md={5} lg={4} className='border border-info border-2 rounded-end-circle align-self-stretch ' id='wineDownWednesdayImg'> */}
               {/* background image set */}
-            </Col>
+            {/* </Col>
           </Row>
-        </Container>
+        </Container> */}
 
         {/* Subscribe Section */}
-        <Container fluid id='subscribeToShow'>
+        {/* <Container fluid id='subscribeToShow'>
           <Container   >
             <Row>
               <Col className='text-center'>
@@ -135,9 +136,9 @@ export default function Home(props) {
               </Col>
             </Row>
           </Container>
-        </Container>
+        </Container> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
