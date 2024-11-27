@@ -14,12 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <BootstrapClient>
-          <Script src="https://kit.fontawesome.com/1637efd201.js" crossOrigin="anonymous" />
-        </BootstrapClient>
+        <Script src="https://kit.fontawesome.com/1637efd201.js" crossOrigin="anonymous" />
       </head>
       <body>
-        {children}
+        <BootstrapClient>
+          {children}
+        </BootstrapClient>
       </body>
     </html>
   );
