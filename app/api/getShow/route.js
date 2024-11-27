@@ -3,9 +3,9 @@ import axios from 'axios';
 
 export async function GET() {
     //spotify client id
-    let client_id = '1a659c7c204f49e0b4607851faf65b6f';
+    let client_id = process.env.client_id;
     //spotify client secret
-    let client_secret = '2ea36d43d2324acdb54240475c5d12ce';
+    let client_secret = process.env.client_secret;
 
     // headers object
     const headers = {
