@@ -28,17 +28,15 @@ export default function Home(props) {
 
   return (
     <>
-      <h1>gndsalfkgn</h1>
+      <h1>gndsal</h1>
     </>
   )
-
 
 }
 
 
 //   return (
 //     <>
-//     <h1>hello</h1>
 //      <Header />
 //       <main id='top'>
 //         {/*Introduction Section - real talk, over some chilled */}
