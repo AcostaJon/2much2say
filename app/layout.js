@@ -14,7 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <Script src="https://kit.fontawesome.com/1637efd201.js" crossOrigin="anonymous" />
+        <BootstrapClient>
+          <Script src="https://kit.fontawesome.com/1637efd201.js" crossOrigin="anonymous" />
+        </BootstrapClient>
       </head>
       <body>
         {children}
