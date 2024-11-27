@@ -1,4 +1,4 @@
-// about page
+'use client'
 // react compnent
 import Link from 'next/link';
 // bootstrap components
@@ -7,18 +7,21 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 // image components
-import PhoneandCoffee from '@/components/images/phoneCoffee';
-import Logo from '@/components/images/logo';
-import LisiAvatar from '@/components/images/lisi';
+import PhoneandCoffee from '@/app/components/images/phoneCoffee';
+import Logo from '@/app/components/images/logo';
+import LisiAvatar from '@/app/components/images/lisi';
 
 // my components
-import Subscribe from '@/components/subscribe'
-import LatestEpisodes from '@/components/episode/latestEpisodes';
+import Subscribe from '@/app/components/subscribe'
+import LatestEpisodes from '@/app/components/episode/latestEpisodes';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 
-function About(props) {
+export default function About(props) {
   return (
     <>
+    <Header />
       <main id='top'>
         {/*Introduction Section - About our podcast */}
         <Container className='my-3 py-3'>
@@ -98,8 +101,7 @@ function About(props) {
           </Container>
         </Container>
       </main>
+      <Footer />
     </>
   );
 }
-
-export default About;

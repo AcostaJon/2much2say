@@ -1,3 +1,4 @@
+'use client'
 // reviews page
 // react component
 import Script from 'next/script';
@@ -5,10 +6,14 @@ import Script from 'next/script';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// my components
+import Header from '@/app/components/header';
+import Footer from '@/app/components/footer';
 
-function Reviews() {
+export default function Reviews() {
   return (
     <>
+    <Header />
       <main id='top'>
         {/* title */}
         <Container fluid className=' bg-secondary  bg-opacity-10'>
@@ -26,8 +31,7 @@ function Reviews() {
 
         </Container>
       </main>
+      <Footer />
     </>
   );
 }
-
-export default Reviews;

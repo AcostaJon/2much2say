@@ -1,20 +1,34 @@
-//**************** Homepage **********************
-// react/next components
+'use client'
+import { useEffect } from "react";
 import Link from 'next/link';
+// css
+import styles from "./page.module.css";
 // bootstrap components
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 //my components
-import MediaPlayer from '@/components/mediaplayer/mediaPlayer';
-import Subscribe from '@/components/subscribe'
-import LatestEpisodes from '@/components/episode/latestEpisodes';
+import MediaPlayer from '@/app/components/mediaplayer/mediaPlayer';
+import Subscribe from '@/app/components/subscribe'
+import LatestEpisodes from '@/app/components/episode/latestEpisodes';
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home(props) {
+  useEffect(() => {
+
+    // get show
+    fetch('/api/getShow')
+      .then((data) => {
+        return data.json()
+      });
+
+  })
 
   return (
     <>
+    <Header />
       <main id='top'>
         {/*Introduction Section - real talk, over some chilled */}
         <Container id='attentionGrabber'>
@@ -35,11 +49,11 @@ export default function Home(props) {
         </Container>
 
         {/* media player */}
-        <p className='container my-3 text-center '><span className='text-info'>LATEST EPISODE:</span> {props.firstEpName}</p>
-        <MediaPlayer spotify={props.firstEpSpotifyLink} src={props.firstEpSrc} />
+        <p className='container my-3 text-center '><span className='text-info'>LATEST EPISODE:</span> </p>
+        {/* <MediaPlayer spotify={props.firstEpSpotifyLink} src={props.firstEpSrc} /> */}
 
         {/* Latest Episodes Section */}
-        <LatestEpisodes episodes={props.latestEp} />
+        {/* <LatestEpisodes episodes={props.latestEp} /> */}
 
         {/*About Us Section */}
         <Container fluid className='my-5 py-5' >
@@ -72,7 +86,7 @@ export default function Home(props) {
             <Row >
               <Col>
                 {/* pwr comments plugin */}
-            
+
               </Col>
             </Row>
           </Container>
@@ -122,11 +136,8 @@ export default function Home(props) {
             </Row>
           </Container>
         </Container>
-
       </main>
+      <Footer />
     </>
-  )
+  );
 }
-
-
-

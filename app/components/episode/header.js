@@ -1,7 +1,7 @@
 // react component
 import Link from 'next/link';
 // image component
-import Logo from './images/logo';
+import Logo from './components/episode/images/logo';
 // bootstrap components
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';

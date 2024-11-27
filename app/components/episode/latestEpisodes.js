@@ -7,11 +7,11 @@ import LatestEpisode from './latestEpisode';
 
 function LatestEpisodes(props) {
   let i = 0;
-  const allEpisodes = props.episodes.map((episode) => (
-    <Col key={i++}>
-      <LatestEpisode spotifyLink={episode.external_urls.spotify} date={episode.release_date} length={episode.duration_ms} title={episode.name} desc={episode.description} src={episode.audio_preview_url} />
-    </Col>
-  ))
+  // const allEpisodes = props.episodes.map((episode) => (
+  //   <Col key={i++}>
+  //     <LatestEpisode spotifyLink={episode.external_urls.spotify} date={episode.release_date} length={episode.duration_ms} title={episode.name} desc={episode.description} src={episode.audio_preview_url} />
+  //   </Col>
+  // ))
 
   return (
     <Container className='py-5 my-5' id='latestEpisodes'>
@@ -20,7 +20,7 @@ function LatestEpisodes(props) {
           <h3>Start Listening Today</h3>
           <h1>Latest Episodes</h1>
           <Row xs={1} md={3} className='my-5'>
-            {allEpisodes}
+            {/* {allEpisodes} */}
           </Row>
           <Button href='/episodes' variant="info" size="lg">More Episodes</Button>
         </Col>

@@ -6,7 +6,7 @@ import Placeholder from 'react-bootstrap/Placeholder';
 import PhoneandCoffee from '../images/phoneCoffee';
 // media player
 // mediaplayer component
-import MediaPlayer from '@/components/mediaplayer/mediaPlayer';
+import MediaPlayer from '@/app/components/mediaplayer/mediaPlayer';
 
 
 

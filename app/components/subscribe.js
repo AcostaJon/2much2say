@@ -1,3 +1,4 @@
+'use client'
 // modal/popup
 import { useState } from 'react';
 import Link from 'next/link';
@@ -5,9 +6,9 @@ import Link from 'next/link';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 // image components
-import ApplePodcast from '@/components/images/applePodcast';
-import GooglePodcast from '@/components/images/googlePodcast';
-import SubscribeSpotifyIcon from "@/components/images/subscribeSpotifyIcon";
+import ApplePodcast from '@/app/components/images/applePodcast';
+import GooglePodcast from '@/app/components/images/googlePodcast';
+import SubscribeSpotifyIcon from "@/app/components/images/subscribeSpotifyIcon";
 
 
 function Example() {

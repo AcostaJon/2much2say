@@ -5,7 +5,7 @@ import { Container } from 'react-bootstrap';
 // image  component
 import PhoneandCoffee from '../images/phoneCoffee';
 // my component
-import MediaPlayer from '@/components/mediaplayer/mediaPlayer';
+import MediaPlayer from '@/app/components/mediaplayer/mediaPlayer';
 
 const Episode = (props) => {
 

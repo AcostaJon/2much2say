@@ -5,22 +5,22 @@ import Col from 'react-bootstrap/Col';
 // react component
 import Link from 'next/link';
 // image components
-import ApplePodcast from '@/components/images/applePodcast';
-import GooglePodcast from '@/components/images/googlePodcast';
-import SubscribeSpotifyIcon from "@/components/images/subscribeSpotifyIcon";
+import ApplePodcast from '@/app/components/images/applePodcast';
+import GooglePodcast from '@/app/components/images/googlePodcast';
+import SubscribeSpotifyIcon from "@/app/components/images/subscribeSpotifyIcon";
 
 function Footer(props) {
 
     // returns array of recent episodes
-    const recentEpisodes = props.latestEp.map((episode) => (
-        <li key={episode.id} >
-            "
-            <Link href={`/episodes/#${episode.id}`}>
-                {episode.name}
-            </Link>
-            "
-        </li>
-    ))
+    // const recentEpisodes = props.latestEp.map((episode) => (
+    //     <li key={episode.id} >
+    //         "
+    //         <Link href={`/episodes/#${episode.id}`}>
+    //             {episode.name}
+    //         </Link>
+    //         "
+    //     </li>
+    // ))
 
 
     return (
@@ -33,7 +33,7 @@ function Footer(props) {
                         <div className='w-75 w-lg-25 mx-auto text-center'>
                             <p className='footer-header font-weight-bold'>Recent Episodes</p>
                             <ul>
-                                {recentEpisodes}
+                                {/* {recentEpisodes} */}
                             </ul>
                         </div>
                     </Col>
@@ -42,11 +42,11 @@ function Footer(props) {
                         <div className='w-75 w-lg-25 mx-auto text-center'>
                             <p className='footer-header font-weight-bold'> Pages</p>
                             <ul>
-                                <li><Link href="/#top">Home</Link></li>
-                                <li><Link href="/about#top">About</Link></li>
-                                <li><Link href="/episodes#top">Episodes</Link></li>
-                                <li><Link href="/reviews#top">Reviews</Link></li>
-                                <li><Link href="/contact-us#top">Contact Us</Link></li>
+                                <li><Link href="/">Home</Link></li>
+                                <li><Link href="/about">About</Link></li>
+                                <li><Link href="/episodes">Episodes</Link></li>
+                                <li><Link href="/reviews">Reviews</Link></li>
+                                <li><Link href="/contact">Contact Us</Link></li>
                             </ul>
                         </div>
                     </Col>
