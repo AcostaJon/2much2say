@@ -176,6 +176,10 @@
    padding: 125px 0;
 
  }
+ #subscribeMessage,#aboutMessage  {
+  font-size: 16px;
+}
+
 
 
  /***************************** media query breakpoints **************************************/
@@ -184,7 +188,7 @@
  @media (max-width: 767px) {
 
    h1 {
-     font-size: 24px;
+     font-size: 22px;
    }
 
    h3 {
@@ -221,7 +225,19 @@
  @media (min-width: 768px) {
 
    h1 {
-     font-size: 46px;
+     font-size: 32px;
+   }
+
+   h3 {
+     font-size: 26px;
+   }
+
+   #subscribeMessage {
+     font-size: 24px;
+     width: 50%;
+   }
+   #aboutMessage{
+    font-size: 24px;
    }
 
    /* latest Episodes */

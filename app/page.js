@@ -48,21 +48,24 @@ export default function Home(props) {
         {/* <LatestEpisodes episodes={props.latestEp} /> */}
 
         {/*About Us Section */}
-        <div className='container-fluid my-5 py-5' >
-          <div className="container">
-            <div className="row d-flex flex-column">
+        <div className='container my-5 py-5 ' >
+         
+
+            <div className="row d-flex flex-column flex-md-row">
+
               <div className="col position-relative">
                 <div className='border border-info border-2  rounded-start-pill align-self-stretch' id='aboutUsSection' >
                 </div>
               </div>
+
               <div className="col" >
                 <h3 className="mt-2 fs-4">Leslie & Lisi</h3>
-                <h1 className='my-3 '>We have Created This Podcast Based on Positivity, and Success for others.</h1>
+                <h1 className='my-3'>We have Created This Podcast Based on Positivity, and Success for others.</h1>
                 <p className="fs-6">We are artists, writers, and podcast host's.</p>
                 <a className='btn btn-info' href="/about">About Us</a>
               </div>
             </div>
-          </div>
+
         </div>
 
         {/* Reviews Section - We Love Your Reviews */}
@@ -85,10 +88,12 @@ export default function Home(props) {
 
         {/* Winedown Wednesday - Section*/}
         <div className='container py-5' >
+
           <div className="row d-flex flex-column-reverse flex-md-row p-2" >
-            <div className='col pt-3' >
+
+            <div className='col' >
               <h3 className="text-end fs-4">Wine Down Wednesday's.</h3>
-              <h1 className='my-3 fs-5'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</h1>
+              <h1 className='my-3'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</h1>
               <div className='row m-0 my-lg-4'>
                 <div className="col">
                   <ul className='true-crime-list '>
@@ -105,10 +110,12 @@ export default function Home(props) {
               </div>
               <a className='btn btn-info' href="/about">More About Us</a>
             </div>
+
             <div className='col border border-info border-2 rounded-end-circle align-self-stretch ' id='wineDownWednesdayImg'>
               {/* background image set */}
             </div>
           </div>
+
         </div>
 
         {/* Subscribe Section */}
@@ -118,7 +125,7 @@ export default function Home(props) {
               <div className='col text-center'>
                 <h3 className="fs-2">Join the Team</h3>
                 <h1 className="fs-1">Subscribe to The Show</h1>
-                <p className=' fs-6 mx-auto mb-4'>
+                <p id="subscribeMessage" className='mx-auto mb-4'>
                   Follow us here or on your favorite podcast app to get the scoop about relationships, family, lifestyle and so much more. </p>
                 <Subscribe />
               </div>

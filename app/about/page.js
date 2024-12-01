@@ -20,7 +20,7 @@ export default function About(props) {
           <div className='row d-flex flex-column-reverse flex-md-row'>
             <div className='col d-flex flex-column align-items-center align-items-md-start my-4 '>
               <h1>About Our <span className="text-info">Podcast</span></h1>
-              <p className='fs-6 my-1 mx-2 mx-md-0'>Trane is the most popular podcast network in North America. We've been nominated to 23 Poddy awards and our creators are best in class.</p>
+              <p id="aboutMessage"  className='mb-3 mx-4 mx-md-0 text-center text-md-start '>2much2say is the most popular podcast network in North America. We've been nominated for awards and our creators are best in class.</p>
               <a href='/episodes' className='btn btn-info'>All Episodes</a>
             </div>
             <div className="col">
@@ -37,7 +37,6 @@ export default function About(props) {
                 <h1 className='w-75 mx-auto'>The Only Podcast I Want To Listen To</h1>
                 <div className='container'>
                   <Logo />
-                  <p>Real Conversations</p>
                 </div>
               </div>
             </div>
@@ -78,7 +77,7 @@ export default function About(props) {
           <div className='col text-center'>
                 <h3 className="fs-2">Join the Party</h3>
                 <h1 className="fs-1">Subscribe to The Show</h1>
-                <p className=' fs-6 mx-auto mb-4'>
+                <p id="subscribeMessage"  className=' mx-auto mb-4'>
                 Our community is what drives us forward. We couldn't have done it without your support! We work hard to produce the best content we possible can.</p>
                 <Subscribe />
               </div>

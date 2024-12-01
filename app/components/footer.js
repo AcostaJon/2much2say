@@ -22,10 +22,10 @@ function Footer(props) {
     return (
         // Footer
         <footer >
-            <div className='container-fluid'>
+            <div className='container pt-4 pb-3'>
                 <div className='row '>
                     {/* column 1 */}
-                    <div className='col-8'>
+                    <div className='col-8 col-lg-5'>
                         <div className=''>
                             <p className='footer-header font-weight-bold'>Recent Episodes</p>
                             <ul>
@@ -34,7 +34,7 @@ function Footer(props) {
                         </div>
                     </div>
                     {/* column 2 */}
-                    <div className='col-4 my-1'>
+                    <div className='col-4 col-lg-5 my-1'>
                         <div className=''>
                             <p className='footer-header font-weight-bold'> Pages</p>
                             <ul>
@@ -47,7 +47,7 @@ function Footer(props) {
                         </div>
                     </div>
                     {/* column 3 */}
-                    <div className='col'>
+                    <div className='col col-lg-2'>
                         <div className='row'>
                             <div className='col-12'>
                                 <div >
@@ -77,7 +77,7 @@ function Footer(props) {
             </div>
             {/*  all rights reserved */}
             <div className='container-fluid bg-secondary  bg-opacity-10 py-3' >
-                <p className='m-0'>&copy; 2023. All Rights Reserved </p>
+                <p className='container mb-0'>&copy; 2023. All Rights Reserved </p>
             </div>
         </footer>
     );
