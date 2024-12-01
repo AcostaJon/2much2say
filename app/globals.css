@@ -23,7 +23,7 @@
 
  ul {
    padding: 0;
-   list-style: none;
+   list-style: square;
  }
 
  h1 {
@@ -155,7 +155,7 @@
 
  #wineDownWednesdayImg,
  #aboutUsSection {
-   background-repeat: no-repeat;
+   background-repeat: round;
    background-attachment: fixed;
    background-size: contain;
    padding: 175px 100px;
@@ -211,8 +211,8 @@
    /* avatars on about page */
    #leslieAvatar,
    #lisiAvatar {
-     width: 300px;
-     height: 330px;
+     width: 100px;
+     height: 110px;
    }
  }
 

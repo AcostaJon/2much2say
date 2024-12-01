@@ -5,8 +5,8 @@ import Spotifyicon from '@/public/spotify-icon.svg'
 
 const SubscribeSpotifyIcon = () => (
   <Image 
-    width={50}
-    height={50}
+    width={35}
+    height={35}
     src={Spotifyicon} // Route to the image file
     title='Spotify Podcast'
     alt="Spotify icon"

@@ -24,7 +24,7 @@ export default function Home(props) {
 
   return (
     <>
-     <Header />
+      <Header />
       <main id='top'>
         {/*Introduction Section - real talk, over some chilled */}
         <div className="container" id='attentionGrabber'>
@@ -33,19 +33,15 @@ export default function Home(props) {
               <h3>A PODCAST ABOUT SELF</h3>
               <h1 className='my-3'> IMPROVEMENT, BALANCE, AND CONFIDENCE</h1>
               <div className='attentionGrabberButtonConainer'>
-                <Link href='/episodes'>
-                  <button type='button' className='mb-3 mb-sm-0 me-sm-3' variant="outline-info" size="lg">All Episodes</button>
-                </Link>
-                <Link href='#latestEpisodes'>
-                  <button type="button" variant="outline-info" size="lg">Listen Now</button>
-                </Link>
+                <a href='/episodes' className='btn btn-info me-3'>All Episodes</a>
+                <a href='#latestEpisodes' className='btn btn-info '>Listen Now</a>
               </div>
             </div>
           </div>
         </div>
 
         {/* media player */}
-        <p className='container my-3 text-center '><span className='text-info'>LATEST EPISODE:</span> </p>
+        <p className='container my-3 text-center '><span className='text-info fs-4'>LATEST EPISODE:</span> </p>
         {/* <MediaPlayer spotify={props.firstEpSpotifyLink} src={props.firstEpSrc} /> */}
 
         {/* Latest Episodes Section */}
@@ -54,17 +50,16 @@ export default function Home(props) {
         {/*About Us Section */}
         <div className='container-fluid my-5 py-5' >
           <div className="container">
-            <div className="row">
-              <div  className='col border border-info border-2 rounded-start-circle align-self-stretch' id='aboutUsSection' >
-                {/* background image set */}
+            <div className="row d-flex flex-column">
+              <div className="col position-relative">
+                <div className='border border-info border-2  rounded-start-pill align-self-stretch' id='aboutUsSection' >
+                </div>
               </div>
               <div className="col" >
-                <h3>Leslie & Lisi</h3>
-                <h1 className='mt-5 mb-4'>We have Created This Podcast Based on Positivity, and Success for others.</h1>
-                <p className='mb-5'>We are artists, writers, and podcast host's.</p>
-                <Link href='/about'>
-                  <button type="button" variant="info" size="lg">About Us</button>
-                </Link>
+                <h3 className="mt-2 fs-4">Leslie & Lisi</h3>
+                <h1 className='my-3 '>We have Created This Podcast Based on Positivity, and Success for others.</h1>
+                <p className="fs-6">We are artists, writers, and podcast host's.</p>
+                <a className='btn btn-info' href="/about">About Us</a>
               </div>
             </div>
           </div>
@@ -92,25 +87,23 @@ export default function Home(props) {
         <div className='container py-5' >
           <div className="row d-flex flex-column-reverse flex-md-row p-2" >
             <div className='col pt-3' >
-              <h1>Wine Down Wednesday's.</h1>
-              <p className='w-75 my-3'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</p>
+              <h3 className="text-end fs-4">Wine Down Wednesday's.</h3>
+              <h1 className='my-3 fs-5'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</h1>
               <div className='row m-0 my-lg-4'>
                 <div className="col">
-                  <ul className='true-crime-list'>
-                    <li>Latest Episode</li>
+                  <ul className='true-crime-list '>
+                    <li>Latest Episodes</li>
                     <li>Real-time Chat</li>
                   </ul>
                 </div>
                 <div className="col">
-                  <ul className='true-crime-list'>
-                    <li>Wine-Market Coming Soon</li>
+                  <ul className='true-crime-list list-style-bullet'>
+                    <li>Market Coming Soon</li>
                     <li>Merch Coming Soon</li>
                   </ul>
                 </div>
               </div>
-              <Link href='/about'>
-                <button type='button' variant="info" size='lg'>More About Us</button>
-              </Link>
+              <a className='btn btn-info' href="/about">More About Us</a>
             </div>
             <div className='col border border-info border-2 rounded-end-circle align-self-stretch ' id='wineDownWednesdayImg'>
               {/* background image set */}
@@ -119,13 +112,13 @@ export default function Home(props) {
         </div>
 
         {/* Subscribe Section */}
-        <div className="container-fluid"  id='subscribeToShow'>
+        <div className="container-fluid" id='subscribeToShow'>
           <div className="container"   >
             <div className="row">
               <div className='col text-center'>
-                <h3>Join the Team</h3>
-                <h1>Subscribe to The Show</h1>
-                <p className='w-50 mx-auto mb-4'>
+                <h3 className="fs-2">Join the Team</h3>
+                <h1 className="fs-1">Subscribe to The Show</h1>
+                <p className=' fs-6 mx-auto mb-4'>
                   Follow us here or on your favorite podcast app to get the scoop about relationships, family, lifestyle and so much more. </p>
                 <Subscribe />
               </div>

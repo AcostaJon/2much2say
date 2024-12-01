@@ -6,8 +6,8 @@ import AppleIcon from '@/public/apple-icon.svg'
 
 const ApplePodcast = () => (
   <Image
-    width={50}
-    height={50}
+    width={35}
+    height={35}
     src={AppleIcon} // Route to the image file
     alt="apple podcast logo"
     title='Apple Podcast'

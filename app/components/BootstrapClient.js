@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-// css
+// Bootstrap Css
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default function BootstrapClient() {

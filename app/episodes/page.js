@@ -46,7 +46,7 @@ export default function Allepisodes(props) {
           } */}
         </ul>
         {/* see more button */}
-        <button type='btn' href='/episodes' variant="info">Load More</button>
+        <a className='btn btn-info' onClick={handleLoadMore}  >Load More</a>
       </div>
     </main>
     <Footer />

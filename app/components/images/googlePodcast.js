@@ -5,8 +5,8 @@ import GoogleIcon from '@/public/google-icon.svg'
 
 const GooglePodcast = () => (
   <Image 
-    width={50}
-    height={50}
+    width={35}
+    height={35}
     src={GoogleIcon} // Route to the image file
     alt="google podcast logo"
     title='Google Podcast'
