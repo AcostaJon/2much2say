@@ -8,7 +8,7 @@ import Subscribe from '@/app/components/subscribe'
 import LatestEpisodes from '@/app/components/episode/latestEpisodes';
 import Header from '@/app/components/header';
 import Footer from '@/app/components/footer';
-import LeslieAvatar from '@/app/components/images/leslie';
+// import LeslieAvatar from '@/app/components/images/leslie';
 
 export default function About(props) {
   return (
@@ -57,7 +57,6 @@ export default function About(props) {
           </div>
           <div className='row text-center mt-3'>
             <div className='col'>
-              <LeslieAvatar />
               <h1 className='fs-4'>Host</h1>
               <p className='fs-6'>
                 Leslie Acosta
