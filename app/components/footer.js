@@ -5,7 +5,7 @@ import ApplePodcast from '@/app/components/images/applePodcast';
 import GooglePodcast from '@/app/components/images/googlePodcast';
 import SubscribeSpotifyIcon from "@/app/components/images/subscribeSpotifyIcon";
 
-function Footer(props) {
+function Footer() {
 
     // returns array of recent episodes
     // const recentEpisodes = props.latestEp.map((episode) => (

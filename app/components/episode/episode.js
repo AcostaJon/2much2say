@@ -1,7 +1,3 @@
-// bootstrap components
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { Container } from 'react-bootstrap';
 // image  component
 import PhoneandCoffee from '../images/phoneCoffee';
 // my component
@@ -25,38 +21,38 @@ const Episode = (props) => {
 
     return (
         // Episode
-        <Container>
-            <Row md={1} className='p-3 align-items-center bg-secondary  bg-opacity-10' >
-                <Col xs={12} md={3} lg={2}>
+        <div className='container'>
+            <div className='row bg-secondary bg-opacity-10' >
+                <div className='col-12'>
                     {/* episode image */}
                     <div className='image-container' >
                         <PhoneandCoffee />
                     </div>
-                </Col>
-                <Col className="p-2 flex-grow-1" md={9} >
+                </div>
+                <div className="col-12 p-2 flex-grow-1" >
                     {/* episode information */}
                     <div className='info-container text-start'>
-                        <Row className='episodeMetaData justify-content-between' xs={1} md={2}>
-                            <Col md={2} >
+                        <div className='row episodeMetaData justify-content-between' >
+                            <div className='col'>
                                 {/* date */}
                                 <p>{props.date}</p>
-                            </Col>
-                            <Col>
+                            </div>
+                            <div className='col'>
                                 {/* length */}
                                 <p>{msToTime(milliSeconds)}</p>
-                            </Col>
-                        </Row>
+                            </div>
+                        </div>
                         {/*  title */}
                         <h1 className='episodeTitle'>{props.title}</h1>
                         {/*  description */}
                         <p className='episodeDesc d-none d-md-block'>{props.desc}</p>
                         {/* source */}
-                        <MediaPlayer src={props.src} spotify={props.spotifyLink} />
+                        <MediaPlayer src={props.src} spotify={props.spotify} />
                     </div>
 
-                </Col>
-            </Row >
-        </Container>
+                </div>
+            </div >
+        </div>
     )
 }
 

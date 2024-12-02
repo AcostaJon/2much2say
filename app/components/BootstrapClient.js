@@ -1,5 +1,4 @@
 'use client';
-
 import { useEffect } from 'react';
 // Bootstrap Css
 import 'bootstrap/dist/css/bootstrap.css';

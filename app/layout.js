@@ -1,5 +1,6 @@
 // bootstrap js
 import BootstrapClient from './components/BootstrapClient';
+// global css
 import "./globals.css";
 // next script tag
 import Script from 'next/script';
@@ -17,7 +18,6 @@ export default function RootLayout({ children }) {
         <Script src="https://kit.fontawesome.com/1637efd201.js" crossOrigin="anonymous" />
       </head>
       <body>
-        <BootstrapClient/>
           {children}
       </body>
     </html>

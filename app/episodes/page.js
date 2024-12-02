@@ -7,7 +7,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 
 
-export default function Allepisodes(props) {
+export default function Allepisodes() {
   const [n, setN] = useState(5);
 
   // returns an array of all episodes from props api call

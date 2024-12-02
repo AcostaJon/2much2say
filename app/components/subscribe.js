@@ -1,14 +1,14 @@
 'use client'
 // // modal/popup
-import { useState } from 'react';
-import Link from 'next/link';
+// import { useState } from 'react';
+// import Link from 'next/link';
 // // image components
-import ApplePodcast from '@/app/components/images/applePodcast';
-import GooglePodcast from '@/app/components/images/googlePodcast';
-import SubscribeSpotifyIcon from "@/app/components/images/subscribeSpotifyIcon";
+// import ApplePodcast from '@/app/components/images/applePodcast';
+// import GooglePodcast from '@/app/components/images/googlePodcast';
+// import SubscribeSpotifyIcon from "@/app/components/images/subscribeSpotifyIcon";
 
 
-function Example() {
+function Subscribe() {
   // const [show, setShow] = useState(false);
   // const handleClose = () => setShow(false);
   // const handleShow = () => setShow(true);
@@ -40,4 +40,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default Subscribe;
