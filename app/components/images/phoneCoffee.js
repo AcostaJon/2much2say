@@ -4,7 +4,7 @@ import Image from 'next/image';
 import PhoneCoffee from '@/public/phonecoffee.jpg'
 
 const PhoneandCoffee = () => (
-  <Image className='img-fluid'
+  <Image className='img-fluid rounded'
     src={PhoneCoffee} // Route of the image file
     alt="Microphone"
   />

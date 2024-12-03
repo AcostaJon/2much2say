@@ -4,8 +4,7 @@ import PhoneandCoffee from '@/app/components/images/phoneCoffee';
 import Logo from '@/app/components/images/logo';
 import LisiAvatar from '@/app/components/images/lisi';
 // my components
-// import Subscribe from '@/app/components/subscribe'
-// import LatestEpisodes from '@/app/components/episode/latestEpisodes';
+import Subscribe from '@/app/components/subscribe'
 import Header from '@/app/components/header';
 import Footer from '@/app/components/footer';
 // import LeslieAvatar from '@/app/components/images/leslie';
@@ -43,9 +42,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Latest Episodes Section */}
-        {/* <LatestEpisodes episodes={props.latestEp} /> */}
-
         {/* Our Team Section */}
         <div className='conatiner w-75 mx-auto my-5 py-3'>
           <div className='row' >
@@ -79,7 +75,7 @@ export default function About() {
                 <h1 className="fs-1">Subscribe to The Show</h1>
                 <p id="subscribeMessage"  className=' mx-auto mb-4'>
                 Our community is what drives us forward. We couldn't have done it without your support! We work hard to produce the best content we possible can.</p>
-                {/* <Subscribe /> */}
+                <Subscribe />
               </div>
           </div>
         </div>

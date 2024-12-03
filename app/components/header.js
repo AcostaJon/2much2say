@@ -3,7 +3,7 @@ import Link from 'next/link';
 // image component
 import Logo from '@/app/components/images/logo';
 // My components
-// import Subscribe from './subscribe'
+import Subscribe from './subscribe'
 
 function Header() {
   return (
@@ -18,12 +18,12 @@ function Header() {
         </button>
         <div id="navbarScroll" className='collapse navbar-collapse flex-md-wrap justify-content-md-end '>
           <ul className='d-flex flex-column flex-md-row align-items-center'>
-            <Link className='me-lg-3' href="/">Home</Link>
-            <Link className='me-lg-3' href="/about">About</Link>
-            <Link className='me-lg-3' href="/episodes">Episodes</Link>
-            <Link className='me-lg-3' href="/reviews">Reviews</Link>
-            <Link className='me-lg-3' href="/contact">Contact Us</Link>
-            {/* <Subscribe /> */}
+            <Link className='mb-1 mb-md-0 me-lg-3' href="/">Home</Link>
+            <Link className='mb-1 mb-md-0 me-lg-3' href="/about">About</Link>
+            <Link className='mb-1 mb-md-0 me-lg-3' href="/episodes">Episodes</Link>
+            <Link className='mb-1 mb-md-0 me-lg-3' href="/reviews">Reviews</Link>
+            <Link className='mb-1 mb-md-0 me-lg-3' href="/contact">Contact Us</Link>
+            <Subscribe />
           </ul>
         </div>
       </div>

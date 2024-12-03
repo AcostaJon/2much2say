@@ -17,12 +17,12 @@ function LatestEpisodes() {
     ))
 
     return (
-        <div className='container py-5 my-5' id='latestEpisodes'>
+        <div className='container mt-5 mb-5 ' id='latestEpisodes'>
             <div className='row'>
                 <div className='col text-center' >
-                    <h3>Start Listening Today</h3>
-                    <h1>Latest Episodes</h1>
-                    <div className='row my-5'>
+                    <h1>Start Listening Today</h1>
+                    <h3 className="fw-light mt-3">Latest Episodes</h3>
+                    <div className='row mb-1 mt-4 mb-lg-4  align-items-end '>
                         {allEpisodes}
                     </div>
                     <a href='/episodes' className="btn btn-info">More Episodes</a>

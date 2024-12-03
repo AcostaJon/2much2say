@@ -11,20 +11,10 @@ import { AppContext } from "./components/context/context";
 import SpotifyPodcast from "./components/images/spotifyPodcast";
 
 export default function Home() {
-  const [show, setShow] = useState([]);
   const [latestEpisode, setLatestEpisode] = useState([]);
   const [firstThree, setFirstThree] = useState([]);
 
   useEffect(() => {
-
-    // get show
-    fetch('/api/getShow')
-      .then((data) => {
-        return data.json()
-      })
-      .then((data) => {
-        setShow(data)
-      })
 
     // get latest episode
     fetch('/api/getShow')
@@ -57,7 +47,7 @@ export default function Home() {
         <main id='top'>
 
           {/*Introduction Section - real talk, over some chilled */}
-          <div className="container" id='attentionGrabber'>
+          <div className="container " id='attentionGrabber'>
             <div className="row" >
               <div className='col d-flex flex-column justify-content-end align-items-center'>
                 <h3>A PODCAST ABOUT SELF</h3>
@@ -71,10 +61,13 @@ export default function Home() {
           </div>
 
           {/*Latest Episode */}
-          <p className='container my-3 text-center '><span className='text-info fs-4'>LATEST EPISODE: {latestEpisode.name}</span> </p>
-          <div className='container text-center mt-4' >
-            <audio className="w-100" controls controlsList={"nodownload"} src={latestEpisode.audio_preview_url} />
-            <div className='d-flex justify-content-center' >
+          <div className="text-center bg-info bg-opacity-10 py-5">
+            <div >
+              <h1 className='container mt-2 text-center'>Latest Episode:</h1>
+              <h3 className='text-info mb-3 fw-light'> {latestEpisode.name}</h3>
+            </div>
+            <audio className="w-75" controls controlsList={"nodownload"} src={latestEpisode.audio_preview_url} />
+            <div className='d-flex justify-content-center mt-2' >
               <a href={'https://open.spotify.com/episode/' + latestEpisode.id} target="_blank" title='listen to full episode on spotify' className='me-2'>
                 Full Episode
               </a>
@@ -102,12 +95,12 @@ export default function Home() {
           </div>
 
           {/* Reviews Section - We Love Your Reviews */}
-          <div className='container-fluid py-5 my-5 bg-secondary  bg-opacity-10'>
+          <div className='container-fluid py-2 my-2 bg-info bg-opacity-10'>
             <div className='container pb-5'>
               <div className="row">
                 <div className='col text-center my-5'>
                   <h3>We Love Your Reviews</h3>
-                  <h1>Leave a Comment</h1>
+                  <h1 >Leave a Comment</h1>
                 </div>
               </div>
               <div className="row" >
@@ -125,8 +118,8 @@ export default function Home() {
             <div className="row d-flex flex-column-reverse flex-md-row p-2" >
 
               <div className='col' >
-                <h3 className="text-end fs-4">Wine Down Wednesday's.</h3>
-                <h1 className='my-3'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>INSTAGRAM LIVE</a>  to be a part of our latest episode and to see whats to come.</h1>
+                <h3 className="text-end fs-4 mt-2">Wine Down Wednesday's.</h3>
+                <h1 className='my-3'>Every wednesday join our  <a href='https://www.instagram.com/p/CS8IA14L3DU/' id='wine_down_IGLink' target='_blank'>Insta-Live<i className="fa-brands fa-instagram"></i></a>  to be a part of our latest episode and to see whats to come.</h1>
                 <div className='row m-0 my-lg-4'>
                   <div className="col">
                     <ul className='true-crime-list '>

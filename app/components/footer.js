@@ -1,23 +1,32 @@
-// react component
+'use client'
+// react
 import Link from 'next/link';
+import { useContext, useEffect, useState } from 'react';
 // image components
 import ApplePodcast from '@/app/components/images/applePodcast';
 import GooglePodcast from '@/app/components/images/googlePodcast';
 import SubscribeSpotifyIcon from "@/app/components/images/subscribeSpotifyIcon";
 
 function Footer() {
+    const [recentEpisodes, setRecentEpisodes] = useState([]);
 
-    // returns array of recent episodes
-    // const recentEpisodes = props.latestEp.map((episode) => (
-    //     <li key={episode.id} >
-    //         "
-    //         <Link href={`/episodes/#${episode.id}`}>
-    //             {episode.name}
-    //         </Link>
-    //         "
-    //     </li>
-    // ))
+    useEffect(() => {
+        // get recent episodes (first 6)
+        fetch('/api/getShow')
+            .then((data) => {
+                return data.json()
+            })
+            .then((data) => {
+                const first = data.episodes.items[1]
+                const second = data.episodes.items[2]
+                const third = data.episodes.items[3]
+                const fourth = data.episodes.items[4]
+                const fifth = data.episodes.items[5]
+                const sixth = data.episodes.items[6]
 
+                setRecentEpisodes([first, second, third, fourth, fifth, sixth])
+            })
+    }, [])
 
     return (
         // Footer
@@ -29,7 +38,14 @@ function Footer() {
                         <div className=''>
                             <p className='footer-header font-weight-bold'>Recent Episodes</p>
                             <ul>
-                                {/* {recentEpisodes} */}
+                                {
+                                    recentEpisodes.map((episode) => (
+                                        <li key={episode.id} >
+                                            <a href={'/about'}  >
+                                                {episode.name}
+                                            </a>
+                                        </li>
+                                    ))}
                             </ul>
                         </div>
                     </div>

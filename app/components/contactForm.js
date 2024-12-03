@@ -1,53 +1,36 @@
-// // bootstrap component
-import { FormGroup } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-
-function BasicExample() {
+function ContactForm() {
 
     // handle form submit
-    async function handleSubmit(e) {
+    function handleSubmit(e) {
+
+        // prevent page refresh
         e.preventDefault()
-        const formData = new FormData(e.target)
-        const response = await fetch('/api/form', {
-            method: 'POST',
-            body: new URLSearchParams(formData),
-        })
-        // Handle response if necessary
-        const data = await response.json()
-        console.log(data)
-        // alert Thank You 
+        // reset form values
+        e.target[0].value = ''
+        e.target[1].value = ''
+        e.target[2].value = ''
+
         alert('Thanks for contacting us, we will get back to you soon!');
     }
 
     return (
-        // Form
-        <div className='form' onSubmit={handleSubmit} >
-            {/* title */}
-            <h1>
-                Send Us an Email
-            </h1>
-            <p className='my-4'>We're happy to hear from you with any question you may have!</p>
-            {/* name */}
-            <FormGroup className="mb-3">
-                <Form.Control name='name' type="name" placeholder="Your name" required />
-            </FormGroup>
-
-            {/* email */}
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control name='email' type="email" placeholder="Your email" required />
-            </Form.Group>
-
-            {/* message */}
-            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Control as="textarea" name='message' rows={3} placeholder="Your message" required />
-                <p> We'll never share your email with anyone else.</p>
-            </Form.Group>
-
-            {/* submit button */}
-            <Button type="submit" variant="info" size='lg'>Submit</Button>
-        </div>
+        <>
+            <p className="w-75 mx-auto">Feel free to reach out we would love to hear your feed back</p>
+            <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                    <input className="w-75 mx-auto ps-2 py-2" name='name' type="name" placeholder="Your name" required />
+                </div>
+                <div className="mb-3">
+                    <input className="w-75 mx-auto ps-2 py-2" name='email' type="email" placeholder="Your email" required />
+                </div>
+                <div className="mb-3">
+                    <textarea className="w-75 mx-auto ps-2 py-2" as="textarea" name='message' rows={3} placeholder="Your message" required />
+                </div>
+                <p>Your information is private with us</p>
+                <button type="submit" className="btn btn-primary">Submit</button>
+            </form>
+        </>
     );
 }
 
-export default BasicExample;
+export default ContactForm;
