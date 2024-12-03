@@ -1,18 +1,11 @@
-// react component
-import Link from 'next/link';
+'use client'
 // image component
 import SpotifyPodcast from '../images/spotifyPodcast';
 // styles
 import Styles from './mediaplayer.module.css'
-import { useContext } from 'react';
-import { AppContext } from '../context/context';
+
 
 const MediaPlayer = (props) => {
-    // context 
-    const contextObject = useContext(AppContext);
-    // episode link to spotify
-    // let spotifyLink = 'https://open.spotify.com/episode/0R1sJYbSPH3LUjh5NvdEvQ'
-
     return (
 
         <div className='container mt-4' >

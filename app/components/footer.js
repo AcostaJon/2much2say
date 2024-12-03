@@ -1,7 +1,7 @@
 'use client'
 // react
 import Link from 'next/link';
-import { useContext, useEffect, useState } from 'react';
+import {useEffect, useState } from 'react';
 // image components
 import ApplePodcast from '@/app/components/images/applePodcast';
 import GooglePodcast from '@/app/components/images/googlePodcast';
@@ -34,7 +34,7 @@ function Footer() {
             <div className='container pt-4 pb-3'>
                 <div className='row '>
                     {/* column 1 */}
-                    <div className='col-8 col-lg-5'>
+                    <div className='col-12 col-md-5'>
                         <div className=''>
                             <p className='footer-header font-weight-bold'>Recent Episodes</p>
                             <ul>
@@ -50,8 +50,7 @@ function Footer() {
                         </div>
                     </div>
                     {/* column 2 */}
-                    <div className='col-4 col-lg-5 my-1'>
-                        <div className=''>
+                    <div className='col-12 col-md-4 my-1'>
                             <p className='footer-header font-weight-bold'> Pages</p>
                             <ul>
                                 <li className='mb-1'><Link href="/">Home</Link></li>
@@ -60,10 +59,9 @@ function Footer() {
                                 <li className='mb-1'><Link href="/reviews">Reviews</Link></li>
                                 <li><Link href="/contact">Contact Us</Link></li>
                             </ul>
-                        </div>
                     </div>
                     {/* column 3 */}
-                    <div className='col col-lg-2'>
+                    <div className='col col-md-3'>
                         <div className='row'>
                             <div className='col-12'>
                                 <div >

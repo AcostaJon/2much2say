@@ -7,7 +7,6 @@ import LisiAvatar from '@/app/components/images/lisi';
 import Subscribe from '@/app/components/subscribe'
 import Header from '@/app/components/header';
 import Footer from '@/app/components/footer';
-// import LeslieAvatar from '@/app/components/images/leslie';
 
 export default function About() {
   return (

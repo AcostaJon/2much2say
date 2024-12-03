@@ -6,14 +6,12 @@ import Episode from '@/app/components/episode/episode';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-
 export default function Allepisodes() {
-  const [n, setN] = useState(5);
+  const [n, setN] = useState(3);
   const [allEpisodes, setAllEpisodes] = useState([]);
 
   useEffect(() => {
-
-    // get latest episode
+    // get all episodes
     fetch('/api/getShow')
       .then((data) => {
         return data.json()
@@ -21,23 +19,20 @@ export default function Allepisodes() {
       .then((data) => {
         setAllEpisodes(data.episodes.items)
       })
-
   }, [])
 
 
   // handles load more button: show 5 more episodes every click
   const handleLoadMore = (e) => {
     e.preventDefault()
-    setN(n + 5);
+    setN(n + 3);
   }
 
   // returns an array of all episodes from props api call
   const episodes = allEpisodes.map((episode) => (
-
       <div className='col-12 col-md-4 mb-5 mb-md-0 '  key={episode.id} id={episode.id} >
-        <Episode spotifyLink={episode.external_urls.spotify} date={episode.release_date} length={episode.duration_ms} title={episode.name} desc={episode.description} src={episode.audio_preview_url} />
+        <Episode spotify={episode.external_urls.spotify} date={episode.release_date} length={episode.duration_ms} title={episode.name} desc={episode.description} src={episode.audio_preview_url} />
       </div>
-
   ))
 
   return (
@@ -58,10 +53,10 @@ export default function Allepisodes() {
         {/* Episodes  */}
         <div className='container text-center' >
           <div className='row rg-5'>
-            {episodes}
+            {episodes.slice(0,n)}
           </div>
           {/* see more button */}
-          <a className='btn btn-info' onClick={handleLoadMore}  >Load More</a>
+          <a className='btn btn-info' onClick={handleLoadMore}>Load More</a>
         </div>
       </main>
       <Footer />

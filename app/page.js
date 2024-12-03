@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from "react";
 import React from "react";
-// import Subscribe from '@/app/components/subscribe'
+import Subscribe from '@/app/components/subscribe'
 // my components
 import Header from "./components/header";
 import Footer from "./components/footer";
@@ -153,7 +153,7 @@ export default function Home() {
                   <h1 className="fs-1">Subscribe to The Show</h1>
                   <p id="subscribeMessage" className='mx-auto mb-4'>
                     Follow us here or on your favorite podcast app to get the scoop about relationships, family, lifestyle and so much more. </p>
-                  {/* <Subscribe /> */}
+                  <Subscribe />
                 </div>
               </div>
             </div>

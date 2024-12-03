@@ -1,3 +1,4 @@
+'use client'
 // react component
 import Link from 'next/link';
 // image component

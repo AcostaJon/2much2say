@@ -1,3 +1,4 @@
+'use client'
 // image  component
 import PhoneandCoffee from '../images/phoneCoffee';
 // my component
@@ -47,7 +48,7 @@ const Episode = (props) => {
                         {/*  description */}
                         <p className='episodeDesc'>{props.desc}</p>
                         {/* source */}
-                        <MediaPlayer src={props.src} spotify={props.spotifyLink} />
+                        <MediaPlayer src={props.src} spotify={props.spotify} />
                     </div>
 
                 </div>

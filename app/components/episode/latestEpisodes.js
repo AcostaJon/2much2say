@@ -1,3 +1,4 @@
+'use client'
 // components
 import Episode from "./episode";
 // context
@@ -5,10 +6,12 @@ import { useContext } from "react";
 import { AppContext } from "../context/context";
 
 function LatestEpisodes() {
-
+    // context object
     const contextObject = useContext(AppContext)
+    // first three episodes
     const episodes = contextObject.firstThree;
 
+    // return array of episodes
     let i = 0;
     const allEpisodes = episodes.map((episode) => (
         <div className="col-12 col-md-4 mb-5 mb-md-0" key={i++}>

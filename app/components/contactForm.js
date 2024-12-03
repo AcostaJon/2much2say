@@ -1,15 +1,14 @@
+'use client'
 function ContactForm() {
 
     // handle form submit
     function handleSubmit(e) {
-
         // prevent page refresh
         e.preventDefault()
         // reset form values
         e.target[0].value = ''
         e.target[1].value = ''
         e.target[2].value = ''
-
         alert('Thanks for contacting us, we will get back to you soon!');
     }
 
