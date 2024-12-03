@@ -41,31 +41,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Our Team Section */}
-        <div className='conatiner w-75 mx-auto my-5 py-3'>
-          <div className='row' >
-            <div className='col text-center'>
-              <h3 className='fs-4'>Our Team</h3>
-              <h1 className='fs-3  mt-2'>This is brought to you by these awesome people</h1>
-            </div>
-          </div>
-          <div className='row text-center mt-3'>
-            <div className='col'>
-              <h1 className='fs-4'>Host</h1>
-              <p className='fs-6'>
-                Leslie Acosta
-              </p>
-            </div>
-            <div className='col'>
-              <LisiAvatar />
-              <h1 className='fs-4'>Host</h1>
-              <p className='fs-6'>
-                Lysandra Colon
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/*Subscribe Section - join the part */}
         <div className='container-fluid' id='jointheParty'>
           <div className='container text-center'>

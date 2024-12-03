@@ -36,12 +36,12 @@ function Footer() {
                     {/* column 1 */}
                     <div className='col-12 col-md-5'>
                         <div className=''>
-                            <p className='footer-header font-weight-bold'>Recent Episodes</p>
+                            <p className='footer-header fw-bold fs-5'>Recent Episodes</p>
                             <ul>
                                 {
                                     recentEpisodes.map((episode) => (
-                                        <li key={episode.id} >
-                                            <a href={'/about'}  >
+                                        <li key={episode.id} className='fw-light'>
+                                            <a href={episode.external_urls.spotify} target="_blank"   >
                                                 {episode.name}
                                             </a>
                                         </li>
@@ -51,13 +51,13 @@ function Footer() {
                     </div>
                     {/* column 2 */}
                     <div className='col-12 col-md-4 my-1'>
-                            <p className='footer-header font-weight-bold'> Pages</p>
+                            <p className='footer-header fw-bold fs-5'> Pages</p>
                             <ul>
-                                <li className='mb-1'><Link href="/">Home</Link></li>
-                                <li className='mb-1'><Link href="/about">About</Link></li>
-                                <li className='mb-1'><Link href="/episodes">Episodes</Link></li>
-                                <li className='mb-1'><Link href="/reviews">Reviews</Link></li>
-                                <li><Link href="/contact">Contact Us</Link></li>
+                                <li className='mb-1 fw-light'><Link href="/">Home</Link></li>
+                                <li className='mb-1 fw-light'><Link href="/about">About</Link></li>
+                                <li className='mb-1 fw-light'><Link href="/episodes">Episodes</Link></li>
+                                <li className='mb-1 fw-light'><Link href="/reviews">Reviews</Link></li>
+                                <li className='fw-light'><Link href="/contact">Contact Us</Link></li>
                             </ul>
                     </div>
                     {/* column 3 */}
@@ -65,22 +65,25 @@ function Footer() {
                         <div className='row'>
                             <div className='col-12'>
                                 <div >
-                                    <p className='footer-header font-weight-bold'>Follow Our Podcast</p>
+                                    <p className='footer-header fw-bold fs-5'>Follow Our Podcast</p>
                                     <ul className='d-flex'>
                                         <li>
                                             {/* apple */}
                                             <Link href='https://podcasts.apple.com/gb/podcast/2much2say/id1582844332' target='_blank'>
                                                 <ApplePodcast />
+                                                <p>apple</p>
                                             </Link></li>
-                                        <li className='mx-2'>
+                                        <li className='mx-2 text-center'>
                                             {/* google */}
                                             <Link href='https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81ZmE0NGE4NC9wb2RjYXN0L3Jzcw==' target='_blank'>
                                                 <GooglePodcast />
+                                                <p>google</p>
                                             </Link></li>
                                         <li>
                                             {/* spotify */}
                                             <Link href='https://open.spotify.com/show/3p9jAp3NXRBXZJtyks5jsh' title='Google Podcast' target="_blank">
                                                 <SubscribeSpotifyIcon />
+                                                <p>spotify</p>
                                             </Link></li>
                                     </ul>
                                 </div>

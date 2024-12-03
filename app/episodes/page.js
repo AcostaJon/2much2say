@@ -52,11 +52,11 @@ export default function Allepisodes() {
 
         {/* Episodes  */}
         <div className='container text-center' >
-          <div className='row rg-5'>
+          <div className='row g-lg-3 rg-5 align-items-start'>
             {episodes.slice(0,n)}
           </div>
           {/* see more button */}
-          <a className='btn btn-info' onClick={handleLoadMore}>Load More</a>
+          <a className='btn btn-info mt-4' onClick={handleLoadMore}>Load More</a>
         </div>
       </main>
       <Footer />

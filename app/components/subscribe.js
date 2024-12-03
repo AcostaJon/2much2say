@@ -24,7 +24,7 @@ function Subscribe() {
             <div className="modal-body d-flex justify-content-evenly py-4">
               <Link href='https://podcasts.apple.com/gb/podcast/2much2say/id1582844332' className='text-center' title='Apple Podcast' target="_blank">
                 <ApplePodcast />
-                <p className='pt-2 mb-0'>itunes</p>
+                <p className='pt-2 mb-0'>apple</p>
               </Link>
               <Link href='https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy81ZmE0NGE4NC9wb2RjYXN0L3Jzcw==' className='text-center' title='Google Podcast' target="_blank">
                 <GooglePodcast />

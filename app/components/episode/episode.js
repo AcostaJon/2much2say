@@ -1,10 +1,16 @@
 'use client'
+import { useState } from 'react';
+import { useRef } from 'react';
 // image  component
 import PhoneandCoffee from '../images/phoneCoffee';
 // my component
 import MediaPlayer from '@/app/components/mediaplayer/mediaPlayer';
 
 const Episode = (props) => {
+    const [j, setJ] = useState(80)
+
+    const spanRef = useRef(null);
+    const p = useRef(null);
 
     // episode length in miliseconds
     let milliSeconds = props.length;
@@ -17,6 +23,14 @@ const Episode = (props) => {
         var mins = s % 60;
         var hrs = (s - mins) / 60;
         return hrs + ':' + mins + ':' + secs;
+    }
+
+    const seeMore = () => {
+        // show the rest of episode description
+        setJ(j + props.desc.length)
+        // 'see more' element
+        spanRef.current.innerText = '';
+    
     }
 
 
@@ -46,7 +60,7 @@ const Episode = (props) => {
                         {/*  title */}
                         <h3 className='episodeTitle text-light'>{props.title}</h3>
                         {/*  description */}
-                        <p className='episodeDesc'>{props.desc}</p>
+                        <p className='episodeDesc' ref={p}>{props.desc.slice(0,j)}  <span className='btn text-info focus-ring p-0 ms-1' ref={spanRef} onClick={seeMore}>see more</span> </p>
                         {/* source */}
                         <MediaPlayer src={props.src} spotify={props.spotify} />
                     </div>
