@@ -36,7 +36,7 @@ export async function GET() {
         }).then((data) => {
             return data.data
         }).catch((error) => {
-            throw new Error("error, post request for access token, returned: " + error)
+            throw new Error("error, get request for data, returned: " + error)
         })
 
         return Response.json(show)
