@@ -9,6 +9,8 @@ import LatestEpisodes from '@/app/components/episode/latestEpisodes';
 import { AppContext } from "./components/context/context";
 // images
 import SpotifyPodcast from "./components/images/spotifyPodcast";
+// image component
+import Logo from '@/app/components/images/logo';
 
 export default function Home() {
   const [latestEpisode, setLatestEpisode] = useState([]);
@@ -90,24 +92,6 @@ export default function Home() {
                 <h1 className='my-3'>We have Created This Podcast Based on Positivity, and Success for others.</h1>
                 <p className="fs-6">We are artists, writers, and podcast host's.</p>
                 <a className='btn btn-info' href="/about">About Us</a>
-              </div>
-            </div>
-          </div>
-
-          {/* Reviews Section - We Love Your Reviews */}
-          <div className='container-fluid py-2 my-2 bg-info bg-opacity-10'>
-            <div className='container pb-5'>
-              <div className="row">
-                <div className='col text-center my-5'>
-                  <h3>We Love Your Reviews</h3>
-                  <h1 >Leave a Comment</h1>
-                </div>
-              </div>
-              <div className="row" >
-                <div className="col">
-                  {/* pwr comments plugin */}
-
-                </div>
               </div>
             </div>
           </div>
