@@ -22,7 +22,6 @@ function Header() {
             <Link className='mb-1 mb-md-0 me-lg-3' href="/">Home</Link>
             <Link className='mb-1 mb-md-0 me-lg-3' href="/about">About</Link>
             <Link className='mb-1 mb-md-0 me-lg-3' href="/episodes">Episodes</Link>
-            <Link className='mb-1 mb-md-0 me-lg-3' href="/reviews">Reviews</Link>
             <Link className='mb-1 mb-md-0 me-lg-3' href="/contact">Contact Us</Link>
             <Subscribe />
           </ul>
