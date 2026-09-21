@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Podcast Hub 🎙️
 
-## Getting Started
+A multi-page web application built to host and showcase full podcast episodes directly from Spotify. Powered by Next.js App Router and Bootstrap, this application connects seamlessly with the Spotify Web API to deliver an immersive listener experience complete with full episode streaming, episode catalogs, and dynamic show details.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Spotify Web API Integration:** Fetches and displays full podcast episodes, show details, metadata, and audio previews in real time.
+- **Multi-Page App Router Architecture:** Clean URL routes for browsing episode archives, specific episode details, host bio, and show updates.
+- **Embedded Audio Player:** Stream episodes directly within the app or jump out to Spotify.
+- **Responsive Layout:** Mobile-friendly UI built with Bootstrap components and custom CSS overrides.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Framework:** [Next.js](https://nextjs.org/) (React & App Router)
+- **API Integration:** [Spotify Web API](https://developer.spotify.com/documentation/web-api)
+- **Styling & UI:** [Bootstrap](https://getbootstrap.com/) & Custom CSS
+- **Icons:** [Bootstrap Icons](https://icons.getbootstrap.com/)
+- **Deployment:** Vercel (https://2much2say.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Getting Started
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Follow these steps to set up and run the application locally.
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js (v18 or higher) and npm installed:
+  ```bash
+  node -v
+  npm -v
