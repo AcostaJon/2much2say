@@ -23,13 +23,3 @@ A multi-page web application built to host and showcase full podcast episodes di
 
 ---
 
-## 🚀 Getting Started
-
-Follow these steps to set up and run the application locally.
-
-### Prerequisites
-
-- Node.js (v18 or higher) and npm installed:
-  ```bash
-  node -v
-  npm -v
